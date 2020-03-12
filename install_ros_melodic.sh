@@ -41,7 +41,7 @@ echo ""
 echo "[Environment setup and getting rosinstall]"
 source /opt/ros/$ros_version/setup.sh
 sh -c "echo \"source /opt/ros/$ros_version/setup.bash\" >> ~/.bashrc"
-sudo apt install python-rosinstall python-rosinstall-generator python-wstool build-essential
+sudo apt install python-rosinstall python-rosinstall-generator python-wstool python-catkin-tools build-essential
 
 echo ""
 echo "[Make the catkin workspace]"
