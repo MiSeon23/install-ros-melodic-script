@@ -17,7 +17,7 @@ name_catkin_workspace=${name_catkin_workspace:="catkin_ws"}
 echo ""
 echo "[Add the ROS repository]"
 if [ ! -e /etc/apt/sources.list.d/ros-latest.list ]; then
-    sudo sh -c 'echo \"deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main\" > /etc/apt/sources.list.d/ros-latest.list'
+    sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 fi
 
 echo ""
@@ -35,6 +35,7 @@ sudo apt install ros-melodic-desktop-full
 echo ""
 echo "[Initialize rosdep]"
 sudo sh -c "rosdep init"
+sudo rosdep fix-permissions
 rosdep update
 
 echo ""
