@@ -29,8 +29,8 @@ echo "[Update the package lists]"
 sudo apt update -y
 
 echo ""
-echo "[Install the ros-desktop]"
-sudo apt install ros-melodic-desktop
+echo "[Install the ros-desktop-full]"
+sudo apt install ros-melodic-desktop-full
 
 echo ""
 echo "[Initialize rosdep]"
