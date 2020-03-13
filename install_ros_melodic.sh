@@ -35,8 +35,8 @@ sudo apt install ros-melodic-desktop-full
 echo ""
 echo "[Initialize rosdep]"
 sudo sh -c "rosdep init"
-sudo rosdep fix-permissions
 rosdep update
+sudo rosdep fix-permissions
 
 echo ""
 echo "[Environment setup and getting rosinstall]"
